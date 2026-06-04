@@ -1,0 +1,110 @@
+/* index.css */
+:root {
+  /* Soft, tinted light mode color palette */
+  --bg: #f9f8f4;               /* Subtle cream tone instead of stark white */
+  --text: #4a4552;             /* Deep slate-charcoal */
+  --text-h: #110d1a;           /* Near-black headings */
+  --border: #e2e0e5;           /* Clean dividers */
+  --code-bg: #f0ede4;          /* Block containers */
+  --accent: #8b1eff;           /* Premium vibrant violet */
+  --accent-bg: rgba(139, 30, 255, 0.08);
+  --accent-border: rgba(139, 30, 255, 0.4);
+  --social-bg: rgba(240, 243, 236, 0.6);
+  --shadow: rgba(0, 0, 0, 0.06) 0 10px 15px -3px, rgba(0, 0, 0, 0.03) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Sleek slate dark mode color palette */
+    --bg: #0f1115;             /* Deep rich midnight dark */
+    --text: #9ca3af;           /* Crisp grey readable prose */
+    --text-h: #f3f4f6;         /* Bright light headings */
+    --border: #1f232b;         /* Low contrast dark borders */
+    --code-bg: #161920;        /* Inset container backdrops */
+    --accent: #c084fc;         /* Radiant neon lavender */
+    --accent-bg: rgba(192, 132, 252, 0.12);
+    --accent-border: rgba(192, 132, 252, 0.4);
+    --social-bg: rgba(31, 35, 43, 0.5);
+    --shadow: rgba(0, 0, 0, 0.3) 0 10px 15px -3px, rgba(0, 0, 0, 0.2) 0 4px 6px -2px;
+  }
+}
+
+
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
