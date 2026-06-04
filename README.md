@@ -1,5 +1,4 @@
 # Internship-Management-System
-# Internship Management Platform
 
 ## Features
 
