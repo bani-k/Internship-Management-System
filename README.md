@@ -165,7 +165,7 @@ Students encounter active logic preventing duplicate data requests:
 
 1. Open your terminal environment window and navigate to your backend repository directory:
 ```bash
-cd internship-backend
+cd backend
 
 ```
 
@@ -189,7 +189,7 @@ node server.js
 
 1. Open a second separate terminal window and switch paths to your client directory layout:
 ```bash
-cd internship-frontend
+cd frontend
 
 ```
 
